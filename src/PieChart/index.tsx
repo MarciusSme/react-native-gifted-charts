@@ -106,8 +106,8 @@ export const PieChart = (props: propTypes) => {
         <View
           style={{
             position: 'absolute',
-            top: -extraRadiusForFocused,
-            left: -extraRadiusForFocused,
+            // top: -extraRadiusForFocused,
+            // left: -extraRadiusForFocused,
           }}>
           <PieChartMain
             {...props}
@@ -134,7 +134,7 @@ export const PieChart = (props: propTypes) => {
           />
         </View>
       )}
-      <View style={{position: 'absolute'}}>
+      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
         <PieChartMain
           {...props}
           selectedIndex={selectedIndex}
